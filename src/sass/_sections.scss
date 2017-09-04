@@ -46,3 +46,19 @@ main {
 .main-full {
   transform: scale(1);
 }
+
+// FEATURED CARD STYLES
+.featured-card {
+  display: inline-block;
+  padding: 15px;
+  img {
+    width: 100%;
+  }
+}
+
+// 3 WIDE CARDS
+.featured-content {
+  .featured-card {
+    width: 33%;
+  }
+}
