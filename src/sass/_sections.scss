@@ -1,0 +1,48 @@
+/* SECTIONS */
+header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../images/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: $headerText;
+  h1, p {
+    text-shadow: 20px 0 2px rgba(0,0,0,0.3);
+  }
+}
+
+nav {
+  background-color: $navBg;
+  color: $navText;
+  padding: 10px 0;
+  width: 100%;
+  z-index: 100;
+  .main-nav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    li {
+      padding: 0;
+    }
+  }
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 15px;
+  transform: scale(0.99);
+  transition: transform 1.5s;
+}
+.main-full {
+  transform: scale(1);
+}

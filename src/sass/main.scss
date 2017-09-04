@@ -1,0 +1,18 @@
+
+// IMPORTS
+@import "variables";
+@import "grid";
+@import "forms";
+@import "navigation";
+@import "buttons";
+@import "sections";
+
+// TPOGRAPHY
+h1 {
+  font-family: $headingFont;
+}
+
+p {
+  font-family: $bodyFont;
+  line-height: 2;
+}
