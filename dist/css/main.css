@@ -51,11 +51,24 @@ nav {
     justify-content: space-around;
     padding: 0; }
     nav .main-nav li {
-      padding: 0; }
+      padding: 0;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: center; }
+
+.logo {
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  max-width: 0;
+  overflow: hidden; }
 
 .sticky-nav {
   position: fixed;
   top: 0; }
+  .sticky-nav .logo {
+    max-width: 500px; }
 
 main {
   width: 80%;
@@ -63,29 +76,39 @@ main {
   padding: 25px 15px;
   -webkit-transform: scale(0.99);
   transform: scale(0.99);
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
-  transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s; }
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s; }
 
 .main-full {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .featured-card {
-  display: inline-block;
-  padding: 15px; }
+  background-color: #f9f7f7;
+  margin: 15px; }
   .featured-card img {
     width: 100%; }
+  .featured-card p, .featured-card h3 {
+    padding: 0px 15px; }
 
 .featured-content .featured-card {
   width: 33%; }
 
-h1 {
+h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif; }
 
 p {
   font-family: "Raleway", sans-serif;
   line-height: 2; }
+
+li, ul, span {
+  font-family: "Raleway", sans-serif; }
 
 /*# sourceMappingURL=main.css.map */

@@ -28,12 +28,24 @@ nav {
     padding: 0;
     li {
       padding: 0;
+      flex: 1;
+      text-align: center;
     }
   }
 }
+.logo {
+  font-family: $headingFont;
+  transition: all .3s;
+  max-width: 0;
+  overflow: hidden;
+}
+
 .sticky-nav {
   position: fixed;
   top: 0;
+  .logo {
+    max-width: 500px;
+  }
 }
 
 main {
@@ -41,18 +53,24 @@ main {
   margin: 0 auto;
   padding: 25px 15px;
   transform: scale(0.99);
-  transition: transform 1.5s;
+  transition: transform .5s;
 }
 .main-full {
   transform: scale(1);
 }
 
 // FEATURED CARD STYLES
+.card-container {
+  display: flex;
+}
 .featured-card {
-  display: inline-block;
-  padding: 15px;
+  background-color: $cardBg;
+  margin: 15px;
   img {
     width: 100%;
+  }
+  p, h3 {
+    padding: 0px 15px;
   }
 }
 
